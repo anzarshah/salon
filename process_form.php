@@ -6,7 +6,7 @@ if (isset($_POST['submit'])) {
     $email = filter_var(trim($_POST['bb-email']), FILTER_SANITIZE_EMAIL);
     $phone = trim($_POST['bb-phone']);
     $time = trim($_POST['bb-time']);
-    $branch = trim($_POST['bb-branch']);
+    // $branch = trim($_POST['bb-branch']);
     $date = trim($_POST['bb-date']);
     $number = trim($_POST['bb-number']);
     $message = trim($_POST['bb-message']);
@@ -29,7 +29,7 @@ if (isset($_POST['submit'])) {
     $email_content .= "Email: $email\n";
     $email_content .= "Phone: $phone\n";
     $email_content .= "Time: $time\n";
-    $email_content .= "Branch: $branch\n";
+    // $email_content .= "Branch: $branch\n";
     $email_content .= "Date: $date\n";
     $email_content .= "Number of People: $number\n";
     $email_content .= "Message: $message\n";
