@@ -13,7 +13,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
         <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500&display=swap" rel="stylesheet">
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -21,11 +20,15 @@
         <link href="css/bootstrap-icons.css" rel="stylesheet">
 
         <link href="css/templatemo-barber-shop.css" rel="stylesheet">
+        <link href="./man.css" rel="stylesheet">
 
 
     </head>
     
     <body>
+        <div id="overlay">
+            <div class="loader"></div>
+          </div>
 
         <div class="container-fluid">
             <div class="row">
@@ -72,10 +75,8 @@
             
                                         </div>
 
-                                        
-                                        <h3 class="mb-2">Hair Spa and Treatment 
-
-                                        </h3>
+                                        <button class="show-pricing-button" data-target="pricing-list-4">Hair Spa and Treatment </button>
+                                      <div class="pricing-list" id="pricing-list-4">
 
                                         <div class="price-list-thumb">
                                             <h6 class="d-flex">
@@ -196,12 +197,13 @@
                                                 <strong>₹2750</strong>
                                             </h6>
                                         </div>
+                                    </div>
 
-                                        <br>
                                         
-                                        <h3 class="mb-2">Hair Straightening/Smoothening 
 
-                                        </h3>
+
+                                        <button class="show-pricing-button" data-target="pricing-list-5">Hair Straightening/Smoothening </button>
+                                        <div class="pricing-list" id="pricing-list-5">
 
                                         <div class="price-list-thumb">
                                             <h6 class="d-flex">
@@ -234,12 +236,11 @@
                                                 <strong>₹7625</strong>
                                             </h6>
                                         </div>
+                                    </div>
 
-                                        <br>
-                                        
-                                        <h3 class="mb-2">Haircut & Styling
-
-                                        </h3>
+      
+                                        <button class="show-pricing-button" data-target="pricing-list-12">Haircut & Styling </button>
+                                        <div class="pricing-list" id="pricing-list-12">
 
                                         <div class="price-list-thumb">
                                             <h6 class="d-flex">
@@ -306,12 +307,10 @@
                                             </h6>
                                         </div>
 
-                                        <br>
-                                        
-                                        <h3 class="mb-2">Hair Colouring 
+                                        </div>
 
-
-                                        </h3>
+                                        <button class="show-pricing-button" data-target="pricing-list-6">Hair Colouring </button>
+                                        <div class="pricing-list" id="pricing-list-6">
 
                                         <div class="price-list-thumb">
                                             <h6 class="d-flex">
@@ -397,12 +396,11 @@
                                                 <strong>₹3999</strong>
                                             </h6>
                                         </div>
-
-                                        <br>
+                                        </div>
                                         
-                                        <h3 class="mb-2">Skin Care
-
-                                        </h3>
+    
+                                        <button class="show-pricing-button" data-target="pricing-list-11">Skin Care </button>
+                                        <div class="pricing-list" id="pricing-list-11">
 
                                         <div class="price-list-thumb">
                                             <h6 class="d-flex">
@@ -525,11 +523,11 @@
                                             </h6>
                                         </div>
 
-                                        <br>
+                                        </div>
                                         
-                                        <h3 class="mb-2">Body Care
-
-                                        </h3>
+  
+                                        <button class="show-pricing-button" data-target="pricing-list-7">Body Care </button>
+                                        <div class="pricing-list" id="pricing-list-7">
 
 
                                         <div class="price-list-thumb">
@@ -720,12 +718,11 @@
                                             </h6>
                                         </div>
 
-                                        <br>
+                                        </div>
 
 
-                                        <h3 class="mb-2">BRIDAL
-
-                                        </h3>
+                                        <button class="show-pricing-button" data-target="pricing-list-10">BRIDAL</button>
+                                        <div class="pricing-list" id="pricing-list-10">
 
                                         <div class="price-list-thumb">
                                             <h6 class="d-flex">
@@ -960,6 +957,7 @@
                                                 <strong>₹749</strong>
                                             </h6>
                                         </div>
+                                        </div>
 
                                         
                                         
@@ -978,12 +976,31 @@
   
 
             </div>
+            </div>
 
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/click-scroll.js"></script>
         <script src="js/custom.js"></script>
+        <script>
+            const buttons = document.querySelectorAll('.show-pricing-button');
+            
+            buttons.forEach((button) => {
+              const target = button.getAttribute('data-target');
+              const pricingList = document.querySelector(`#${target}`);
+              
+              button.addEventListener('click', () => {
+                pricingList.classList.toggle('show');
+                button.classList.toggle('show-pricing-button-clicked');
+              });
+            });
+          </script>
+            <script>
+                $(window).on('load', function() {
+                  $('#overlay').fadeOut(500);
+                });
+              </script>
 
     </body>
 </html>

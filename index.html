@@ -16,21 +16,19 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500&display=swap" rel="stylesheet">
 
+
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
         <link href="css/bootstrap-icons.css" rel="stylesheet">
 
         <link href="css/templatemo-barber-shop.css" rel="stylesheet">
-<!--
 
-TemplateMo 585 Barber Shop
-
-https://templatemo.com/tm-585-barber-shop
-
--->
     </head>
     
     <body>
+        <div id="overlay">
+            <div class="loader"></div>
+          </div>
 
         <div class="container-fluid">
             <div class="row">
@@ -43,7 +41,7 @@ https://templatemo.com/tm-585-barber-shop
 
                     <div class="position-sticky sidebar-sticky d-flex flex-column justify-content-center align-items-center">
                         <a class="navbar-brand" href="index.html">
-                            <img src="images/templatemo-barber-logo.png" class="logo-image img-fluid" align="">
+                            <!-- <img src="images/templatemo-barber-logo.png" class="logo-image img-fluid" align=""> -->
                         </a>
 
                         <ul class="nav flex-column">
@@ -68,12 +66,13 @@ https://templatemo.com/tm-585-barber-shop
                                 <div class="row">
 
                                     <div class="col-lg-8 col-12">
-                                        <h1 class="text-white mb-lg-3 mb-4"><strong>DOWN TOWN</strong></h1>
+                                        <!-- <h1 class="text-white mb-lg-3 mb-4"><strong>DOWN TOWN</strong></h1> -->
+                                        <img src="images/templatemo-barber-logo.png" class="logo-image img-fluid">
                                         <p class="text-black">Unisex salon for all of your needs</p>
                                         <br>
-                                        <a class="btn custom-btn custom-border-btn custom-btn-bg-white smoothscroll me-2 mb-2" href="#section_5">Contact Us</a>
+                                        <a class="btn custom-btn custom-border-btn custom-btn-bg-white smoothscroll me-2 mb-2" href="#section_3">Contact Us</a>
 
-                                        <a class="btn custom-btn smoothscroll mb-2" href="#section_2" >What we do</a>
+                                        <a class="btn custom-btn smoothscroll mb-2" href="#section_2">What we do</a>
                                     </div>
                                 </div>
                             </div>
@@ -83,7 +82,7 @@ https://templatemo.com/tm-585-barber-shop
 
                                 <h4><strong class="text-white">Hurry Up!.</strong></h4>
 
-                                <a href="#booking-section" class="smoothscroll btn custom-btn custom-btn-italic mt-3">Book a seat</a>
+                                <a href="#booking-section" class="smoothscroll btn custom-btn custom-btn-italic mt-3">Book a appointment</a>
                             </div>
                     </section>
 
@@ -131,8 +130,27 @@ https://templatemo.com/tm-585-barber-shop
                         </div>
                     </section>
 
-<!-- 
-                    <section class="about-section section-padding" id="section_3>
+                    <section class="featured-section section-padding">
+                        <div class="section-overlay"></div>
+
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-lg-10 col-12 mx-auto">
+                                    <h2 class="mb-3">Get 15% Discount</h2>
+
+                                    <p>For the opening first month </p>
+
+                                    <strong>Promo Code: Downtown15</strong>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+
+
+                    <!-- <section class="about-section section-padding" id="section_3>
                             <div class="container">
                             <div class="row"> 
 
@@ -175,20 +193,16 @@ https://templatemo.com/tm-585-barber-shop
                                     <div class="col-lg-6 col-12">
                                       <input class="form-control" type="time" name="bb-time" value="18:30" />
                                     </div>
-                                    <!-- <div class="col-lg-6 col-12">
+                                    <div class="col-lg-6 col-12">
                                       <select class="form-select form-control" name="bb-branch" id="bb-branch" aria-label="Default select example">
                                         <option selected="">Select Branches</option>
                                         <option value="Bellandur">Bellandur</option>
                                       </select>
-                                    </div> -->
+                                    </div>
                                     <div class="col-lg-6 col-12">
                                       <input type="date" name="bb-date" id="bb-date" class="form-control" placeholder="Date" required>
                                     </div>
-                                    <div class="col-lg-6 col-12">
-                                      <input type="number" name="bb-number" id="bb-number" class="form-control" placeholder="Number of People" required>
-                                    </div>
                                   </div>
-                                  <textarea name="bb-message" rows="3" class="form-control" id="bb-message" placeholder="Comment (Optionals)"></textarea>
                                   <div class="col-lg-4 col-md-10 col-8 mx-auto">
                                     <button type="submit" class="form-control">Submit</button>
                                   </div>
@@ -228,7 +242,7 @@ https://templatemo.com/tm-585-barber-shop
 
                                     <p class="text-white d-flex">
                                         <a href="mailto:info@yourgmail.com" class="site-footer-link">
-                                            xyz@gmail.com
+                                            downtownsalonunisex@gmail.com
                                         </a>
                                     </p>
 
@@ -281,11 +295,38 @@ https://templatemo.com/tm-585-barber-shop
                     </div>
                 </section>
 
+
+                <section class="contact-section" id="section_3">
+                    <div class="review">
+
+                  
+     
+
+                    <div class="section-padding">
+                        <div class="container">
+                            <div class="row">
+                                <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                                <div class="elfsight-app-3ce4bee9-1566-4594-bccf-20f80b765b7a"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+
+                </section>
+
+                
+
+                
+
                 <footer class="site-footer">
                     <div class="container">
                         <div class="row">
 
+
                             <div class="col-lg-12 col-12">
+                            </br>
                                 <h4 class="site-footer-title mb-4">Our Branches</h4>
                             </div>
 
@@ -293,7 +334,7 @@ https://templatemo.com/tm-585-barber-shop
                                 <div class="site-footer-thumb">
                                     <strong class="mb-1">Bellandur</strong>
 
-                                    <p>Bellandur Main Rd, Bellandur, Bengaluru, Karnataka 560103</p>
+                                    <p>Belandur main road mana Callista #79/5 near Village supermarket, 560103</p>
                                 </div>
                             </div>
 
@@ -333,12 +374,18 @@ https://templatemo.com/tm-585-barber-shop
                     </div>
                 </footer>
             </div>
+            </div>
 
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/click-scroll.js"></script>
         <script src="js/custom.js"></script>
+        <script>
+            $(window).on('load', function() {
+              $('#overlay').fadeOut(500);
+            });
+          </script>
 
     </body>
 </html>

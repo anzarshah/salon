@@ -10,19 +10,49 @@ https://templatemo.com/tm-585-barber-shop
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #DDC05A;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
 :root {
   --white-color:                  #DDC05A;
   --primary-color:                #000000;
   --secondary-color:              #c12828;
   --section-bg-color:             #DDC05A;
-  --custom-btn-bg-color:          #c12828;
+  --custom-btn-bg-color:          #000000;
   --custom-btn-bg-hover-color:    #FDBB2D;
   --dark-color:                   #000000;
   --p-color:                      #717275;
   --border-color:                 #7fffd4;
-  --link-hover-color:             #B22727;
+  --link-hover-color:             #DDC05A;
 
-  --body-font-family:             'Unbounded', cursive;
+  --body-font-family:       'Open Sans', sans-serif;
+
 
   --h1-font-size:                 74px;
   --h2-font-size:                 46px;
@@ -35,7 +65,7 @@ https://templatemo.com/tm-585-barber-shop
   --copyright-font-size:          14px;
 
   --border-radius-large:          100px;
-  --border-radius-medium:         20px;
+  --border-radius-medium:         0px;
   --border-radius-small:          10px;
 
   --font-weight-thin:             200;
@@ -45,7 +75,7 @@ https://templatemo.com/tm-585-barber-shop
 }
 
 body {
-  background-color: var(--white-color);
+  background-color: #8a8880;
   font-family: var(--body-font-family); 
 }
 
@@ -68,7 +98,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--font-weight-bold);
+  font-weight:100;
 }
 
 h1 {
@@ -96,7 +126,7 @@ h6 {
 }
 
 p {
-  color: var(--p-color);
+  color: #ffff;
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-light);
 }
@@ -117,6 +147,7 @@ a {
   display: inline-block;
   color: var(--primary-color);
   text-decoration: none;
+
 }
 
 a:hover {
@@ -125,7 +156,7 @@ a:hover {
 
 b,
 strong {
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-light)
 }
 
 
@@ -197,7 +228,7 @@ strong {
   border-radius: var(--border-radius-large);
   color: var(--white-color);
   font-size: var(--btn-font-size);
-  font-weight: var(--font-weight-bold);
+  font-weight: lighter;
   line-height: normal;
   transition: all 0.3s;
   padding: 10px 20px;
@@ -215,8 +246,8 @@ strong {
 }
 
 .custom-btn-bg-white {
-  border-color: #000000;
-  color: #000000;
+  border-color: #ffffff;
+  color: #ffffff;
 }
 
 .custom-btn-italic {
@@ -262,7 +293,8 @@ strong {
 #sidebarMenu .nav-link {
   color: #DDC05A;
   font-size: var(--p-font-size);
-  font-weight: var(--font-weight-bold);
+  font-weight:lighter;
+
   text-transform: uppercase;
   position: relative;
 }
@@ -346,6 +378,9 @@ strong {
   top: 8px;
 }
 
+.review{
+  background-color: #ffffff;
+}
 
 /*---------------------------------------
   HERO        
@@ -372,7 +407,7 @@ strong {
 
 .hero-section::after {
   content: "";
-  background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%);
+  background: linear-gradient(180deg, #000000 0%, #3b3b3b 100%);
   position: absolute;
   top: 0;
   right: 0;
@@ -403,7 +438,7 @@ strong {
 }
 
 .custom-block .custom-btn:hover {
-  background: var(--secondary-color);
+  background: #ddc05a;
 }
 
 .custom-block-image {
@@ -462,7 +497,8 @@ strong {
 }
 
 .featured-section h2 {
-  color: var(--secondary-color);
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .featured-section p {
@@ -470,7 +506,7 @@ strong {
 }
 
 .featured-section strong {
-  background: var(--primary-color);
+  background: #DDC05A;
   border-radius: var(--border-radius-medium);
   display: inline-block;
   margin-top: 10px;
@@ -537,9 +573,9 @@ strong {
   padding-bottom: 100px;
 }
 
-/* .price-list-thumb-wrap {
+.price-list-thumb-wrap {
   padding-right: 50px;
-} */
+}
 
 .price-list-thumb {
   margin-bottom: 10px;
@@ -556,7 +592,7 @@ strong {
 .price-list-thumb-divider {
   background: var(--p-color);
   flex: auto;
-  height: 2px;
+  height: 0px;
   margin: auto 15px 0;
 }
 
@@ -577,7 +613,7 @@ strong {
 }
 
 .booking-form {
-  background: var(--white-color);
+  background: #8a8880;
   border-radius: var(--border-radius-medium);
   padding: 65px;
 }
@@ -599,7 +635,7 @@ strong {
 }
 
 .contact-block {
-  background: var(--secondary-color);
+  background: #ddc05a;
   border-radius: var(--border-radius-medium);
   transform: rotate(8deg);
   height: 100%;
@@ -623,7 +659,7 @@ strong {
 
 .contact-block strong {
   display: block;
-  color: var(--white-color);
+  color: #ffffff;
   text-transform: uppercase;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -649,10 +685,10 @@ strong {
 }
 
 .custom-form button[type="submit"] {
-  background: var(--custom-btn-bg-color);
+  background: var(#000000);
   border: none;
   border-radius: var(--border-radius-large);
-  color: var(--white-color);
+  color: var(#ffffff);
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-medium);
   transition: all 0.3s;
@@ -698,7 +734,7 @@ strong {
 
 .site-footer strong {
   display: block;
-  color: var(--secondary-color);
+  color: #ddc05a;
 }
 
 .copyright-text {
@@ -721,7 +757,7 @@ strong {
 }
 
 .social-icon-link {
-  background: var(--secondary-color);
+  background: #ffffff;
   border-radius: var(--border-radius-large);
   color: var(--white-color);
   font-size: var(--copyright-font-size);
@@ -775,7 +811,7 @@ strong {
   }
 
   h6 {
-    font-size: 18px;
+    font-size: 12px;
   }
 
   .section-padding,
@@ -830,6 +866,42 @@ strong {
 
   h5 {
     font-size: 20px;
+  }
+
+  .services-info h4 {
+    font-size: 20px;
+  }
+
+  .booking-form {
+    padding: 35px;
+  }
+}
+
+
+
+@media screen and (max-width: 360px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+  h6{
+    font-size: 08px;
+
   }
 
   .services-info h4 {

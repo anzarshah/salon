@@ -21,11 +21,15 @@
         <link href="css/bootstrap-icons.css" rel="stylesheet">
 
         <link href="css/templatemo-barber-shop.css" rel="stylesheet">
+        <link href="./man.css" rel="stylesheet">
 
 
     </head>
     
     <body>
+      <div id="overlay">
+        <div class="loader"></div>
+      </div>
 
         <div class="container-fluid">
             <div class="row">
@@ -69,249 +73,257 @@
                                         <div class="mb-4">
                                             <h2 class="mb-2">Price List (MAN)</h2>
 
-                                            <!-- <strong>Starting at $25</strong> -->
+                                            <!--  Starting at $25    -->
                                         </div>
+                                       </div>
 
-                                        <h3 class="mb-2">Haircut & Styling 
-                                        </h3>
-
+                                       <button class="show-pricing-button" data-target="pricing-list-1">Haircut & Styling </button>
+                                       <div class="pricing-list" id="pricing-list-1">
                                         <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                TRENDY KIDDY CUT
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹215.00</strong>
-                                            </h6>
+                                          <h6 class="d-flex">
+                                              TRENDY KIDDY CUT
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹215.00   
+                                          </h6>
+                                    
+                                      </div>
                                       
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                HAIR CUT BASIC
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹215.00</strong>
-                                            </h6>
-                                        
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                HAIR CUT ADVANCED
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹355.00</strong>
-                                            </h6>
-                                        
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                HEAD SHAVE
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹240.00</strong>
-                                            </h6>
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                SHAVE
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹90.00</strong>
-                                            </h6>
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                BEARD TRIM
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹125.00</strong>
-                                            </h6>
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                BEARD STYLING
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹185.00</strong>
-                                            </h6>
-                                        </div>
-                                        <br>
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              HAIR CUT BASIC
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹215.00   
+                                          </h6>
+                                      
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              HAIR CUT ADVANCED
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹355.00   
+                                          </h6>
+                                      
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              HEAD SHAVE
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹240.00   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              SHAVE
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹90.00   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              BEARD TRIM
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹125.00   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              BEARD STYLING
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹185.00   
+                                          </h6>
+                                      </div>
 
-                                        <h3 class="mb-2">Hair Colouring </h3>
+                                       </div>
+
+                                       <button class="show-pricing-button" data-target="pricing-list-2">Hair Colouring</button>
+                                       <div class="pricing-list" id="pricing-list-2">
+                                    
+                                        <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              BEARD COLOURING
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹230.00   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              BEARD COLOURING (AMMONIA FREE)
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹385.00   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              MOUSTACHE COLOURING
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹110.00   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              MOUSTACHE COLOURING (AMMONIA FREE)
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹150.00   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              PRO 10 COLOURING
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹585.00   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              GLOBAL HAIR COLOURING
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹755.00   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              PREMIUM HAIR COLOURING (AMMONIA FREE)
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹985.00   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              STREAKS PER STREAK
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹210.00   
+                                          </h6>
+                                      </div>
+                                      <br>
+                                       </div>
+
+
+                                       <button class="show-pricing-button" data-target="pricing-list-3">Hair Spa And Treatment </button>
+                                       <div class="pricing-list" id="pricing-list-3">
 
                                         <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                BEARD COLOURING
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹230.00</strong>
-                                            </h6>
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                BEARD COLOURING (AMMONIA FREE)
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹385.00</strong>
-                                            </h6>
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                MOUSTACHE COLOURING
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹110.00</strong>
-                                            </h6>
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                MOUSTACHE COLOURING (AMMONIA FREE)
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹150.00</strong>
-                                            </h6>
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                PRO 10 COLOURING
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹585.00</strong>
-                                            </h6>
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                GLOBAL HAIR COLOURING
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹755.00</strong>
-                                            </h6>
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                PREMIUM HAIR COLOURING (AMMONIA FREE)
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹985.00</strong>
-                                            </h6>
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                STREAKS PER STREAK
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹210.00</strong>
-                                            </h6>
-                                        </div>
-                                        <br>
+                                          <h6 class="d-flex">
+                                              HEAD MASSAGE PURE COCONUT NOURISHER
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹305.00   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              HEAD MASSAGE MENTHOL CHILLER
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹305.00   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              HEAD MASSAGE ALMOND INDULGENCE
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹365.00   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              HEAD MASSAGE OLIVE BLISS
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹365.00   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              EXPRESS CONDITIONING HAIR SPA
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹499.00   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              HAIR SPA
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹700.00   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              ANTI-DANDRUFF TREATMENT
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹970.00   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              WELLA SP KERATIN PROTECT TREATMENT
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹1100.00   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              WELLA SP EXPRESS ALCHEMY TREATMENT
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹1430.00   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              WELLA SP INTENSE ALCHEMY TREATMENT
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹1760.00   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              MOROCCONOIL TREATMENT
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹1900.00   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              MOROCCAN OIL WEIGHTLESS HYDRATING TREATMENT FOR FINE HAIR
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹2100.00   
+                                          </h6>
+                                      </div>
 
-                                        <h3 class="mb-2">Hair Spa And Treatment 
+             
 
-                                        </h3>
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                HEAD MASSAGE PURE COCONUT NOURISHER
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹305.00</strong>
-                                            </h6>
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                HEAD MASSAGE MENTHOL CHILLER
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹305.00</strong>
-                                            </h6>
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                HEAD MASSAGE ALMOND INDULGENCE
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹365.00</strong>
-                                            </h6>
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                HEAD MASSAGE OLIVE BLISS
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹365.00</strong>
-                                            </h6>
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                EXPRESS CONDITIONING HAIR SPA
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹499.00</strong>
-                                            </h6>
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                HAIR SPA
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹700.00</strong>
-                                            </h6>
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                ANTI-DANDRUFF TREATMENT
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹970.00</strong>
-                                            </h6>
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                WELLA SP KERATIN PROTECT TREATMENT
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹1100.00</strong>
-                                            </h6>
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                WELLA SP EXPRESS ALCHEMY TREATMENT
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹1430.00</strong>
-                                            </h6>
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                WELLA SP INTENSE ALCHEMY TREATMENT
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹1760.00</strong>
-                                            </h6>
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                MOROCCONOIL TREATMENT
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹1900.00</strong>
-                                            </h6>
-                                        </div>
-                                        
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                MOROCCAN OIL WEIGHTLESS HYDRATING TREATMENT FOR FINE HAIR
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹2100.00</strong>
-                                            </h6>
-                                        </div>
-                                        
-                                        <br>
 
-                                        <h3 class="mb-2">Hair Spa And Treatment 
+                                       </div>
 
-                                        </h3>
+                                       
+                                      <button class="show-pricing-button" data-target="pricing-list-4">Body Care</button>
+                                      <div class="pricing-list" id="pricing-list-4">
 
+  
                                         <div class="price-list-thumb">
                                             <h6 class="d-flex">
                                               REGULAR MANICURE
                                               <span class="price-list-thumb-divider"></span>
-                                              <strong>₹305</strong>
+                                               ₹305   
                                             </h6>
                                           </div>
                                           
@@ -319,7 +331,7 @@
                                             <h6 class="d-flex">
                                               ICE CREAM MANICURE REGULAR
                                               <span class="price-list-thumb-divider"></span>
-                                              <strong>₹365</strong>
+                                               ₹365   
                                             </h6>
                                           </div>
                                           
@@ -327,7 +339,7 @@
                                             <h6 class="d-flex">
                                               PARAFFIN MANICURE
                                               <span class="price-list-thumb-divider"></span>
-                                              <strong>₹415</strong>
+                                               ₹415   
                                             </h6>
                                           </div>
                                           
@@ -335,7 +347,7 @@
                                             <h6 class="d-flex">
                                               MINT-O-KOOL MANICURE
                                               <span class="price-list-thumb-divider"></span>
-                                              <strong>₹485</strong>
+                                               ₹485   
                                             </h6>
                                           </div>
                                           
@@ -343,7 +355,7 @@
                                             <h6 class="d-flex">
                                               ICE CREAM MANICURE PREMIUM
                                               <span class="price-list-thumb-divider"></span>
-                                              <strong>₹785</strong>
+                                               ₹785   
                                             </h6>
                                           </div>
                                           
@@ -351,7 +363,7 @@
                                             <h6 class="d-flex">
                                               CRYSTAL CRUSH MANICURE
                                               <span class="price-list-thumb-divider"></span>
-                                              <strong>₹795</strong>
+                                               ₹795   
                                             </h6>
                                           </div>
                                           
@@ -359,7 +371,7 @@
                                             <h6 class="d-flex">
                                               ICE CREAM MANICURE SIGNATURE
                                               <span class="price-list-thumb-divider"></span>
-                                              <strong>₹1015</strong>
+                                               ₹1015   
                                             </h6>
                                           </div>
                                           
@@ -367,7 +379,7 @@
                                             <h6 class="d-flex">
                                               ICE CREAM PEDICURE REGULAR
                                               <span class="price-list-thumb-divider"></span>
-                                              <strong>₹495</strong>
+                                               ₹495   
                                             </h6>
                                           </div>
                                           
@@ -375,7 +387,7 @@
                                             <h6 class="d-flex">
                                               REGULAR PEDICURE
                                               <span class="price-list-thumb-divider"></span>
-                                              <strong>₹525</strong>
+                                               ₹525   
                                             </h6>
                                           </div>
                                           
@@ -383,7 +395,7 @@
                                             <h6 class="d-flex">
                                               MINT-O-KOOL PEDICURE
                                               <span class="price-list-thumb-divider"></span>
-                                              <strong>₹660</strong>
+                                               ₹660   
                                             </h6>
                                           </div>
                                           
@@ -391,7 +403,7 @@
                                             <h6 class="d-flex">
                                               PARAFFIN PEDICURE
                                               <span class="price-list-thumb-divider"></span>
-                                              <strong>₹660</strong>
+                                               ₹660   
                                             </h6>
                                           </div>
                                           
@@ -399,7 +411,7 @@
                                             <h6 class="d-flex">
                                               CHOCOLATE FOOT SPA
                                               <span class="price-list-thumb-divider"></span>
-                                              <strong>₹750</strong>
+                                               ₹750   
                                             </h6>
                                           </div>
                                           
@@ -407,7 +419,7 @@
                                             <h6 class="d-flex">
                                               CRYSTAL CRUSH PEDICURE
                                               <span class="price-list-thumb-divider"></span>
-                                              <strong>₹795</strong>
+                                               ₹795   
                                             </h6>
                                           </div>
                                           
@@ -415,213 +427,210 @@
                                             <h6 class="d-flex">
                                                ICE CREAM PEDICURE PREMIUM
                                                <span class="price-list-thumb-divider"></span>
-                                               <strong>₹900</strong>
+                                                ₹900   
                                             </h6>
                                          </div>
                                          <div class="price-list-thumb">
                                             <h6 class="d-flex">
                                                ICE CREAM PEDICURE SIGNATURE
                                                <span class="price-list-thumb-divider"></span>
-                                               <strong>₹1130</strong>
+                                                ₹1130   
                                             </h6>
                                          </div>
                                          <div class="price-list-thumb">
                                             <h6 class="d-flex">
                                                HEEL PEEL TREATEMENT
                                                <span class="price-list-thumb-divider"></span>
-                                               <strong>₹2140</strong>
+                                                ₹2140   
                                             </h6>
                                          </div>
+                                      </div>
+                                
+                                      
 
-                                         <br>
-
-                                        <h3 class="mb-2">Skin Care 
+                                       <button class="show-pricing-button" data-target="pricing-list-5">Skin Care </button>
 
 
-                                        </h3>
-
+                                       <div class="pricing-list" id="pricing-list-5">
+                                  
                                         <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                              DETAN - FACE
-                                              <span class="price-list-thumb-divider"></span>
-                                              <strong>₹260</strong>
-                                            </h6>
-                                          </div>
-                                          
-                                          <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                              CLEAN UP HERBAL
-                                              <span class="price-list-thumb-divider"></span>
-                                              <strong>₹545</strong>
-                                            </h6>
-                                          </div>
-                                          
-                                          <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                              CLEAN UP SKIN LIGHTENING FACE
-                                              <span class="price-list-thumb-divider"></span>
-                                              <strong>₹605</strong>
-                                            </h6>
-                                          </div>
-                                          
-                                          <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                              CLEAN UP INSTA WHITENING
-                                              <span class="price-list-thumb-divider"></span>
-                                              <strong>₹970</strong>
-                                            </h6>
-                                          </div>
-                                          
-                                          <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                              FRUIT SECRET FACIAL
-                                              <span class="price-list-thumb-divider"></span>
-                                              <strong>₹730</strong>
-                                            </h6>
-                                          </div>
-                                          
-                                          <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                              HERBAL SECRETS FACIAL
-                                              <span class="price-list-thumb-divider"></span>
-                                              <strong>₹800</strong>
-                                            </h6>
-                                          </div>
-                                          
-                                          <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                              AROMA SKIN LIGHTENING FACIAL
-                                              <span class="price-list-thumb-divider"></span>
-                                              <strong>₹1210</strong>
-                                            </h6>
-                                          </div>
-                                          
-                                          <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                              VITA-C GLOW FACIAL
-                                              <span class="price-list-thumb-divider"></span>
-                                              <strong>₹1375</strong>
-                                            </h6>
-                                          </div>
-                                          
-                                          <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                              GOLD FACIAL
-                                              <span class="price-list-thumb-divider"></span>
-                                              <strong>₹1405</strong>
-                                            </h6>
-                                          </div>
-                                          
-                                          <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                              FAIR BLOOM FACIAL
-                                              <span class="price-list-thumb-divider"></span>
-                                              <strong>₹1650</strong>
-                                            </h6>
-                                          </div>
-                                          
-                                          <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                              PLATINUM GLOW FACIAL
-                                              <span class="price-list-thumb-divider"></span>
-                                              <strong>₹1925</strong>
-                                            </h6>
-                                          </div>
-                                          
-                                          <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                              SKIN BRIGHTENING FACIAL
-                                              <span class="price-list-thumb-divider"></span>
-                                              <strong>₹1925</strong>
-                                            </h6>
-                                          </div>
-                                          
-                                          <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                              24 KARAT GOLD FACIAL
-                                              <span class="price-list-thumb-divider"></span>
-                                              <strong>₹2200</strong>
-                                            </h6>
-                                          </div>
-
-
-                                          <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                PERFECT WHITE FACIAL 
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹2200</strong>
-                                            </h6>
+                                          <h6 class="d-flex">
+                                            DETAN - FACE
+                                            <span class="price-list-thumb-divider"></span>
+                                             ₹260   
+                                          </h6>
                                         </div>
                                         
                                         <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                ACTIVE CHARCOAL FACIAL 
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹2365</strong>
-                                            </h6>
+                                          <h6 class="d-flex">
+                                            CLEAN UP HERBAL
+                                            <span class="price-list-thumb-divider"></span>
+                                             ₹545   
+                                          </h6>
                                         </div>
                                         
                                         <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                SKIN LIGHTENING FACIAL ADVANCED 
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹2640</strong>
-                                            </h6>
+                                          <h6 class="d-flex">
+                                            CLEAN UP SKIN LIGHTENING FACE
+                                            <span class="price-list-thumb-divider"></span>
+                                             ₹605   
+                                          </h6>
                                         </div>
                                         
                                         <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                ILLUMINA FACIAL 
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹2750</strong>
-                                            </h6>
+                                          <h6 class="d-flex">
+                                            CLEAN UP INSTA WHITENING
+                                            <span class="price-list-thumb-divider"></span>
+                                             ₹970   
+                                          </h6>
                                         </div>
                                         
                                         <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                FLAWLESS BRIDAL GLOW FACIAL 
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹2899</strong>
-                                            </h6>
+                                          <h6 class="d-flex">
+                                            FRUIT SECRET FACIAL
+                                            <span class="price-list-thumb-divider"></span>
+                                             ₹730   
+                                          </h6>
                                         </div>
                                         
                                         <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                24 KARAT GOLD ULTIME FACIAL (DOUBLE MASK) 
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹2970</strong>
-                                            </h6>
+                                          <h6 class="d-flex">
+                                            HERBAL SECRETS FACIAL
+                                            <span class="price-list-thumb-divider"></span>
+                                             ₹800   
+                                          </h6>
                                         </div>
                                         
                                         <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                PERFECT WHITE ULTIME FACIAL (DOUBLE MASK) 
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹2970</strong>
-                                            </h6>
+                                          <h6 class="d-flex">
+                                            AROMA SKIN LIGHTENING FACIAL
+                                            <span class="price-list-thumb-divider"></span>
+                                             ₹1210   
+                                          </h6>
                                         </div>
                                         
                                         <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                INSTA WHITENING FACIAL 
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹3190</strong>
-                                            </h6>
+                                          <h6 class="d-flex">
+                                            VITA-C GLOW FACIAL
+                                            <span class="price-list-thumb-divider"></span>
+                                             ₹1375   
+                                          </h6>
                                         </div>
                                         
                                         <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                OXYGEN FACIAL WITH EYE TREATMENT 
-                                                <span class="price-list-thumb-divider"></span>
-                                                <strong>₹3410</strong>
-                                            </h6>
+                                          <h6 class="d-flex">
+                                            GOLD FACIAL
+                                            <span class="price-list-thumb-divider"></span>
+                                             ₹1405   
+                                          </h6>
                                         </div>
                                         
+                                        <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                            FAIR BLOOM FACIAL
+                                            <span class="price-list-thumb-divider"></span>
+                                             ₹1650   
+                                          </h6>
+                                        </div>
+                                        
+                                        <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                            PLATINUM GLOW FACIAL
+                                            <span class="price-list-thumb-divider"></span>
+                                             ₹1925   
+                                          </h6>
+                                        </div>
+                                        
+                                        <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                            SKIN BRIGHTENING FACIAL
+                                            <span class="price-list-thumb-divider"></span>
+                                             ₹1925   
+                                          </h6>
+                                        </div>
+                                        
+                                        <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                            24 KARAT GOLD FACIAL
+                                            <span class="price-list-thumb-divider"></span>
+                                             ₹2200   
+                                          </h6>
+                                        </div>
 
 
-                                          
-                                        
-                                        
+                                        <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              PERFECT WHITE FACIAL 
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹2200   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              ACTIVE CHARCOAL FACIAL 
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹2365   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              SKIN LIGHTENING FACIAL ADVANCED 
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹2640   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              ILLUMINA FACIAL 
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹2750   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              FLAWLESS BRIDAL GLOW FACIAL 
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹2899   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              24 KARAT GOLD ULTIME FACIAL (DOUBLE MASK) 
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹2970   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              PERFECT WHITE ULTIME FACIAL (DOUBLE MASK) 
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹2970   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              INSTA WHITENING FACIAL 
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹3190   
+                                          </h6>
+                                      </div>
+                                      
+                                      <div class="price-list-thumb">
+                                          <h6 class="d-flex">
+                                              OXYGEN FACIAL WITH EYE TREATMENT 
+                                              <span class="price-list-thumb-divider"></span>
+                                               ₹3410   
+                                          </h6>
+                                      </div>
+                                       </div>
+                                      </div>
 
                                   
                                     </div>
@@ -637,12 +646,33 @@
   
 
             </div>
+          </div>
 
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/click-scroll.js"></script>
         <script src="js/custom.js"></script>
+        <script>
+          const buttons = document.querySelectorAll('.show-pricing-button');
+          
+          buttons.forEach((button) => {
+            const target = button.getAttribute('data-target');
+            const pricingList = document.querySelector(`#${target}`);
+            
+            button.addEventListener('click', () => {
+              pricingList.classList.toggle('show');
+              button.classList.toggle('show-pricing-button-clicked');
+            });
+          });
+        </script>
+          <script>
+            $(window).on('load', function() {
+              $('#overlay').fadeOut(500);
+            });
+          </script>
 
     </body>
 </html>
+
+
